@@ -32,7 +32,7 @@ class CorRole(DB.Model):
         foreign_keys=[id_role_groupe],
     )
 
-    def __init__(self, id_group, id_role):
+    def __init__(self, id_group=None, id_role=None):
         self.id_role_groupe = id_group
         self.id_role_utilisateur = id_role
 
